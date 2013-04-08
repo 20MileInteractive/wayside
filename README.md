@@ -1,4 +1,4 @@
-wayside
-=======
+project-starter-template
+========================
 
-Chatham Wayside Inn Mobile Website
+Template for web projects with Hammer and Foundation4
