@@ -1,0 +1,91 @@
+a#top{
+	display: block;
+}
+
+#booking{
+	background: #eee;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	z-index: 999;
+	border-bottom: 1px solid #ddd;
+	a{
+	display: block;
+	padding: 1rem 0;
+	color: #fff !important;	
+	@include linear-gradient(#cf1702, #ad1302);
+	}
+	
+}
+
+#body-content{
+	padding-top: 4rem;
+
+	.row{
+		margin: 1rem auto;
+	}
+	
+	p{
+		color: #555;
+	}
+}
+
+#hero-photo{
+	text-align: center;
+	background: url("http://placehold.it/400x300/999/777&text=background+photo") center top no-repeat;
+	background-size: cover;
+	background-position:center 50px;
+	min-height: 300px;
+}
+
+
+#nav{
+	text-align: center;
+	
+	a.nav-item{
+		display: block;
+		text-align: center;
+		background: $link;
+		color: #fff;
+		padding: .8rem 0;
+		border: 1px solid darken($link,10%);
+
+	}
+	
+	a.nav-item.current{
+		background: lighten($link,30%);
+		border:1px solid lighten($link,20%);
+		color: $link;
+		pointer-events: none;
+    cursor: default;
+	}
+	
+	a.nav-item:hover{
+		background: darken($link, 5%);
+	}
+	
+	a.nav-item+a.nav-item{
+		border-top: none;
+	}
+	
+	a.tel{
+		display: block;
+		text-align: center;
+		padding: .8rem 0;
+		background: #eee;
+		color: $link;
+		border:1px solid #ccc;
+	}
+	
+	a.tel:hover{
+		background: #ddd;
+	}
+	
+}
+
+.footer{
+	a.columns{
+		text-align: center;
+	}
+	margin:1rem auto 3rem;
+}
