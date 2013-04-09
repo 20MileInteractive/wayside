@@ -24,6 +24,10 @@ a#top{
 	.row{
 		margin: 1rem auto;
 	}
+	
+	p{
+		color: #555;
+	}
 }
 
 #hero-photo{
@@ -37,14 +41,37 @@ a#top{
 
 #nav{
 	text-align: center;
-	@include link;
+	
+	a.nav-item{
+		display: block;
+		text-align: center;
+		background: $link;
+		color: #fff;
+		padding: .8rem 0;
+		border: 1px solid darken($link,10%);
+
+	}
+	
+	a.nav-item.current{
+		background: lighten($link,30%);
+		border:1px solid lighten($link,20%);
+		color: $link;
+		pointer-events: none;
+    cursor: default;
+	}
+	
+	a.nav-item:hover{
+		background: darken($link, 5%);
+	}
 	
 	a.nav-item+a.nav-item{
-		border-top:none;
+		border-top: none;
 	}
 	
 	a.tel{
-		@extend a;
+		display: block;
+		text-align: center;
+		padding: .8rem 0;
 		background: #eee;
 		color: $link;
 		border:1px solid #ccc;
@@ -53,6 +80,7 @@ a#top{
 	a.tel:hover{
 		background: #ddd;
 	}
+	
 }
 
 .footer{

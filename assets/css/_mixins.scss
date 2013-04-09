@@ -1,18 +1,2 @@
 // Mixins
 
-@mixin link{
-	a{
-		display: block;
-		text-align: center;
-		background: $link;
-		color: #fff;
-		padding: .8rem 0;
-		border: 1px solid darken($link,10%);
-
-	}
-	
-	a:hover{
-		background:darken($link,5%);
-
-	}
-}

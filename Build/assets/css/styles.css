@@ -21,7 +21,7 @@ body {
   line-height: 1;
   position: relative; }
 
-a:focus, #nav a.tel:focus {
+a:focus {
   outline: none; }
 
 img,
@@ -962,13 +962,13 @@ td {
   direction: ltr; }
 
 /* Default Link Styles */
-a, #nav a.tel {
+a {
   color: #2ba6cb;
   text-decoration: none;
   line-height: inherit; }
-  a:hover, #nav a.tel:hover, a:focus, #nav a.tel:focus {
+  a:hover, a:focus {
     color: #2795b6; }
-  a img, #nav a.tel img {
+  a img {
     border: none; }
 
 /* Default paragraph styles */
@@ -1108,10 +1108,8 @@ blockquote {
     color: #555555; }
     blockquote cite:before {
       content: "\2014 \0020"; }
-    blockquote cite a, blockquote cite #nav a.tel, #nav blockquote cite a.tel,
-    blockquote cite a:visited,
-    blockquote cite #nav a.tel:visited,
-    #nav blockquote cite a.tel:visited {
+    blockquote cite a,
+    blockquote cite a:visited {
       color: #555555; }
 
 blockquote,
@@ -1173,22 +1171,19 @@ blockquote p {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  a, #nav a.tel,
-  a:visited,
-  #nav a.tel:visited {
+  a,
+  a:visited {
     text-decoration: underline; }
 
-  a[href]:after, #nav a[href].tel:after {
+  a[href]:after {
     content: " (" attr(href) ")"; }
 
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
-  .ir a:after, .ir #nav a.tel:after, #nav .ir a.tel:after,
+  .ir a:after,
   a[href^="javascript:"]:after,
-  #nav a[href^="javascript:"].tel:after,
-  a[href^="#"]:after,
-  #nav a[href^="#"].tel:after {
+  a[href^="#"]:after {
     content: ""; }
 
   pre,
@@ -1779,7 +1774,7 @@ form.custom {
         left: 0.9375em;
         top: 50%;
         margin-top: -3px; }
-    form.custom .custom.dropdown:hover a.selector:after, form.custom .custom.dropdown:hover #nav a.selector.tel:after, #nav form.custom .custom.dropdown:hover a.selector.tel:after, form.custom .custom.dropdown.open a.selector:after, form.custom .custom.dropdown.open #nav a.selector.tel:after, #nav form.custom .custom.dropdown.open a.selector.tel:after {
+    form.custom .custom.dropdown:hover a.selector:after, form.custom .custom.dropdown.open a.selector:after {
       content: "";
       display: block;
       width: 0;
@@ -1880,7 +1875,7 @@ form.custom {
     float: left; }
     .button-group > *:first-child {
       margin-left: 0; }
-  .button-group.radius > *:first-child, .button-group.radius > *:first-child > a, #nav .button-group.radius > *:first-child > a.tel, .button-group.radius > *:first-child > button {
+  .button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button {
     -webkit-border-radius: 0;
     border-radius: 0;
     -moz-border-radius-bottomleft: 3px;
@@ -1889,7 +1884,7 @@ form.custom {
     -webkit-border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px; }
-  .button-group.radius > *:last-child, .button-group.radius > *:last-child > a, #nav .button-group.radius > *:last-child > a.tel, .button-group.radius > *:last-child > button {
+  .button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button {
     -webkit-border-radius: 0;
     border-radius: 0;
     -moz-border-radius-topright: 3px;
@@ -1898,7 +1893,7 @@ form.custom {
     -webkit-border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px; }
-  .button-group.round > *:first-child, .button-group.round > *:first-child > a, #nav .button-group.round > *:first-child > a.tel, .button-group.round > *:first-child > button {
+  .button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button {
     -webkit-border-radius: 0;
     border-radius: 0;
     -moz-border-radius-bottomleft: 1000px;
@@ -1907,7 +1902,7 @@ form.custom {
     -webkit-border-top-left-radius: 1000px;
     border-bottom-left-radius: 1000px;
     border-top-left-radius: 1000px; }
-  .button-group.round > *:last-child, .button-group.round > *:last-child > a, #nav .button-group.round > *:last-child > a.tel, .button-group.round > *:last-child > button {
+  .button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button {
     -webkit-border-radius: 0;
     border-radius: 0;
     -moz-border-radius-topright: 1000px;
@@ -2128,10 +2123,8 @@ form.custom {
       width: 100%;
       margin: 0;
       background-color: #efefef; }
-      .section-container section .title a, .section-container section .title #nav a.tel, #nav .section-container section .title a.tel,
-      .section-container .section .title a,
-      .section-container .section .title #nav a.tel,
-      #nav .section-container .section .title a.tel {
+      .section-container section .title a,
+      .section-container .section .title a {
         padding: 0.9375em;
         display: inline-block;
         color: #333333;
@@ -2178,10 +2171,8 @@ form.custom {
       border-bottom: 0;
       position: absolute;
       z-index: 1; }
-      .section-container.tabs section .title a, .section-container.tabs section .title #nav a.tel, #nav .section-container.tabs section .title a.tel,
-      .section-container.tabs .section .title a,
-      .section-container.tabs .section .title #nav a.tel,
-      #nav .section-container.tabs .section .title a.tel {
+      .section-container.tabs section .title a,
+      .section-container.tabs .section .title a {
         width: 100%; }
     .section-container.tabs section:last-child .title,
     .section-container.tabs .section:last-child .title {
@@ -2211,10 +2202,8 @@ form.custom {
     .section-container.vertical-nav section,
     .section-container.vertical-nav .section {
       padding-top: 0 !important; }
-      .section-container.vertical-nav section .title a, .section-container.vertical-nav section .title #nav a.tel, #nav .section-container.vertical-nav section .title a.tel,
-      .section-container.vertical-nav .section .title a,
-      .section-container.vertical-nav .section .title #nav a.tel,
-      #nav .section-container.vertical-nav .section .title a.tel {
+      .section-container.vertical-nav section .title a,
+      .section-container.vertical-nav .section .title a {
         display: block;
         width: 100%; }
       .section-container.vertical-nav section .content,
@@ -2247,10 +2236,8 @@ form.custom {
         top: -1px;
         position: absolute;
         z-index: 1; }
-        .section-container.horizontal-nav section .title a, .section-container.horizontal-nav section .title #nav a.tel, #nav .section-container.horizontal-nav section .title a.tel,
-        .section-container.horizontal-nav .section .title a,
-        .section-container.horizontal-nav .section .title #nav a.tel,
-        #nav .section-container.horizontal-nav .section .title a.tel {
+        .section-container.horizontal-nav section .title a,
+        .section-container.horizontal-nav .section .title a {
           width: 100%; }
       .section-container.horizontal-nav section .content,
       .section-container.horizontal-nav .section .content {
@@ -2307,7 +2294,7 @@ form.custom {
       line-height: 45px;
       font-size: 1.0625em;
       margin: 0; }
-      .top-bar .name h1 a, .top-bar .name h1 #nav a.tel, #nav .top-bar .name h1 a.tel {
+      .top-bar .name h1 a {
         font-weight: bold;
         color: white;
         width: 50%;
@@ -2317,7 +2304,7 @@ form.custom {
     position: absolute;
     right: 0;
     top: 0; }
-    .top-bar .toggle-topbar a, .top-bar .toggle-topbar #nav a.tel, #nav .top-bar .toggle-topbar a.tel {
+    .top-bar .toggle-topbar a {
       color: white;
       text-transform: uppercase;
       font-size: 0.8125em;
@@ -2332,14 +2319,14 @@ form.custom {
       top: 50%;
       margin-top: -16px;
       padding-left: 40px; }
-      .top-bar .toggle-topbar.menu-icon a, .top-bar .toggle-topbar.menu-icon #nav a.tel, #nav .top-bar .toggle-topbar.menu-icon a.tel {
+      .top-bar .toggle-topbar.menu-icon a {
         text-indent: -48px;
         width: 34px;
         height: 34px;
         line-height: 33px;
         padding: 0;
         color: white; }
-        .top-bar .toggle-topbar.menu-icon a span, .top-bar .toggle-topbar.menu-icon #nav a.tel span, #nav .top-bar .toggle-topbar.menu-icon a.tel span {
+        .top-bar .toggle-topbar.menu-icon a span {
           position: absolute;
           right: 0;
           display: block;
@@ -2352,9 +2339,9 @@ form.custom {
     background: transparent; }
     .top-bar.expanded .title-area {
       background: #111111; }
-    .top-bar.expanded .toggle-topbar a, .top-bar.expanded .toggle-topbar #nav a.tel, #nav .top-bar.expanded .toggle-topbar a.tel {
+    .top-bar.expanded .toggle-topbar a {
       color: #888888; }
-      .top-bar.expanded .toggle-topbar a span, .top-bar.expanded .toggle-topbar #nav a.tel span, #nav .top-bar.expanded .toggle-topbar a.tel span {
+      .top-bar.expanded .toggle-topbar a span {
         -webkit-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
         box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888; }
 
@@ -2378,7 +2365,7 @@ form.custom {
     clear: both;
     height: 1px;
     width: 100%; }
-  .top-bar-section ul li > a, .top-bar-section ul #nav li > a.tel, #nav .top-bar-section ul li > a.tel {
+  .top-bar-section ul li > a {
     display: block;
     width: 100%;
     color: white;
@@ -2387,32 +2374,32 @@ form.custom {
     font-size: 0.8125em;
     font-weight: bold;
     background: #333333; }
-    .top-bar-section ul li > a:hover, .top-bar-section ul #nav li > a.tel:hover, #nav .top-bar-section ul li > a.tel:hover {
+    .top-bar-section ul li > a:hover {
       background: #2b2b2b; }
-    .top-bar-section ul li > a.button, .top-bar-section ul #nav li > a.button.tel, #nav .top-bar-section ul li > a.button.tel {
+    .top-bar-section ul li > a.button {
       background: #2ba6cb;
       font-size: 0.8125em; }
-      .top-bar-section ul li > a.button:hover, .top-bar-section ul #nav li > a.button.tel:hover, #nav .top-bar-section ul li > a.button.tel:hover {
+      .top-bar-section ul li > a.button:hover {
         background: #2284a1; }
-    .top-bar-section ul li > a.button.secondary, .top-bar-section ul #nav li > a.button.secondary.tel, #nav .top-bar-section ul li > a.button.secondary.tel {
+    .top-bar-section ul li > a.button.secondary {
       background: #e9e9e9; }
-      .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul #nav li > a.button.secondary.tel:hover, #nav .top-bar-section ul li > a.button.secondary.tel:hover {
+      .top-bar-section ul li > a.button.secondary:hover {
         background: #d0d0d0; }
-    .top-bar-section ul li > a.button.success, .top-bar-section ul #nav li > a.button.success.tel, #nav .top-bar-section ul li > a.button.success.tel {
+    .top-bar-section ul li > a.button.success {
       background: #5da423; }
-      .top-bar-section ul li > a.button.success:hover, .top-bar-section ul #nav li > a.button.success.tel:hover, #nav .top-bar-section ul li > a.button.success.tel:hover {
+      .top-bar-section ul li > a.button.success:hover {
         background: #457a1a; }
-    .top-bar-section ul li > a.button.alert, .top-bar-section ul #nav li > a.button.alert.tel, #nav .top-bar-section ul li > a.button.alert.tel {
+    .top-bar-section ul li > a.button.alert {
       background: #c60f13; }
-      .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul #nav li > a.button.alert.tel:hover, #nav .top-bar-section ul li > a.button.alert.tel:hover {
+      .top-bar-section ul li > a.button.alert:hover {
         background: #970b0e; }
-  .top-bar-section ul li.active a, .top-bar-section ul li.active #nav a.tel, #nav .top-bar-section ul li.active a.tel {
+  .top-bar-section ul li.active a {
     background: #2b2b2b; }
   .top-bar-section .has-form {
     padding: 15px; }
   .top-bar-section .has-dropdown {
     position: relative; }
-    .top-bar-section .has-dropdown > a:after, .top-bar-section #nav .has-dropdown > a.tel:after, #nav .top-bar-section .has-dropdown > a.tel:after {
+    .top-bar-section .has-dropdown > a:after {
       content: "";
       display: block;
       width: 0;
@@ -2436,12 +2423,12 @@ form.custom {
     z-index: 99; }
     .top-bar-section .dropdown li {
       width: 100%; }
-      .top-bar-section .dropdown li a, .top-bar-section .dropdown li #nav a.tel, #nav .top-bar-section .dropdown li a.tel {
+      .top-bar-section .dropdown li a {
         font-weight: normal;
         padding: 8px 15px; }
       .top-bar-section .dropdown li.title h5 {
         margin-bottom: 0; }
-        .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.title h5 #nav a.tel, #nav .top-bar-section .dropdown li.title h5 a.tel {
+        .top-bar-section .dropdown li.title h5 a {
           color: white;
           line-height: 22.5px;
           display: block; }
@@ -2474,7 +2461,7 @@ form.custom {
       display: none; }
     .top-bar .title-area {
       float: left; }
-    .top-bar .name h1 a, .top-bar .name h1 #nav a.tel, #nav .top-bar .name h1 a.tel {
+    .top-bar .name h1 a {
       width: auto; }
     .top-bar input,
     .top-bar .button {
@@ -2504,15 +2491,15 @@ form.custom {
         float: left; }
         .top-bar-section ul li .js-generated {
           display: none; }
-    .top-bar-section li a:not(.button), .top-bar-section li #nav a.tel:not(.button), #nav .top-bar-section li a.tel:not(.button) {
+    .top-bar-section li a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
       background: #111111; }
-      .top-bar-section li a:not(.button):hover, .top-bar-section li #nav a.tel:not(.button):hover, #nav .top-bar-section li a.tel:not(.button):hover {
+      .top-bar-section li a:not(.button):hover {
         background: black; }
-    .top-bar-section .has-dropdown > a, .top-bar-section #nav .has-dropdown > a.tel, #nav .top-bar-section .has-dropdown > a.tel {
+    .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
-      .top-bar-section .has-dropdown > a:after, .top-bar-section #nav .has-dropdown > a.tel:after, #nav .top-bar-section .has-dropdown > a.tel:after {
+      .top-bar-section .has-dropdown > a:after {
         content: "";
         display: block;
         width: 0;
@@ -2526,7 +2513,7 @@ form.custom {
         visibility: hidden; }
     .top-bar-section .has-dropdown:hover > .dropdown, .top-bar-section .has-dropdown:active > .dropdown {
       visibility: visible; }
-    .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after, .top-bar-section .has-dropdown .dropdown #nav li.has-dropdown > a.tel:after, #nav .top-bar-section .has-dropdown .dropdown li.has-dropdown > a.tel:after {
+    .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
       border: none;
       content: "\00bb";
       margin-top: -7px;
@@ -2536,7 +2523,7 @@ form.custom {
       top: auto;
       background: transparent;
       min-width: 100%; }
-      .top-bar-section .dropdown li a, .top-bar-section .dropdown li #nav a.tel, #nav .top-bar-section .dropdown li a.tel {
+      .top-bar-section .dropdown li a {
         color: white;
         line-height: 1;
         white-space: nowrap;
@@ -3032,7 +3019,7 @@ form.custom {
           min-height: 100%;
           height: 100%;
           max-width: none; }
-        .clearing-assembled .clearing-container .carousel > ul li a.th, .clearing-assembled .clearing-container .carousel > ul li #nav a.th.tel, #nav .clearing-assembled .clearing-container .carousel > ul li a.th.tel {
+        .clearing-assembled .clearing-container .carousel > ul li a.th {
           border: none;
           -webkit-box-shadow: none;
           box-shadow: none;
@@ -3113,25 +3100,23 @@ form.custom {
     margin: 0;
     padding: 0 0.75em 0 0;
     float: left; }
-    .breadcrumbs li:hover a, .breadcrumbs li:hover #nav a.tel, #nav .breadcrumbs li:hover a.tel, .breadcrumbs li:focus a, .breadcrumbs li:focus #nav a.tel, #nav .breadcrumbs li:focus a.tel {
+    .breadcrumbs li:hover a, .breadcrumbs li:focus a {
       text-decoration: underline; }
-    .breadcrumbs li a, .breadcrumbs li #nav a.tel, #nav .breadcrumbs li a.tel,
+    .breadcrumbs li a,
     .breadcrumbs li span {
       font-size: 0.6875em;
       padding-left: 0.75em;
       text-transform: uppercase;
       color: #2ba6cb; }
-    .breadcrumbs li.current a, .breadcrumbs li.current #nav a.tel, #nav .breadcrumbs li.current a.tel {
+    .breadcrumbs li.current a {
       cursor: default;
       color: #333333; }
-    .breadcrumbs li.current:hover a, .breadcrumbs li.current:hover #nav a.tel, #nav .breadcrumbs li.current:hover a.tel, .breadcrumbs li.current:focus a, .breadcrumbs li.current:focus #nav a.tel, #nav .breadcrumbs li.current:focus a.tel {
+    .breadcrumbs li.current:hover a, .breadcrumbs li.current:focus a {
       text-decoration: none; }
-    .breadcrumbs li.unavailable a, .breadcrumbs li.unavailable #nav a.tel, #nav .breadcrumbs li.unavailable a.tel {
+    .breadcrumbs li.unavailable a {
       color: #999999; }
-    .breadcrumbs li.unavailable:hover a, .breadcrumbs li.unavailable:hover #nav a.tel, #nav .breadcrumbs li.unavailable:hover a.tel,
-    .breadcrumbs li.unavailable a:focus,
-    .breadcrumbs li.unavailable #nav a.tel:focus,
-    #nav .breadcrumbs li.unavailable a.tel:focus {
+    .breadcrumbs li.unavailable:hover a,
+    .breadcrumbs li.unavailable a:focus {
       text-decoration: none;
       color: #999999;
       cursor: default; }
@@ -3140,7 +3125,7 @@ form.custom {
       color: #aaaaaa;
       position: relative;
       top: 1px; }
-    .breadcrumbs li:first-child a, .breadcrumbs li:first-child #nav a.tel, #nav .breadcrumbs li:first-child a.tel, .breadcrumbs li:first-child span {
+    .breadcrumbs li:first-child a, .breadcrumbs li:first-child span {
       padding-left: 0; }
     .breadcrumbs li:first-child:before {
       content: " "; }
@@ -3215,26 +3200,24 @@ kbd {
     color: #222222;
     font-size: 0.875em;
     margin-left: 0.3125em; }
-    .pagination li a, .pagination li #nav a.tel, #nav .pagination li a.tel {
+    .pagination li a {
       display: block;
       padding: 0.0625em 0.4375em 0.0625em;
       color: #999999; }
-    .pagination li:hover a, .pagination li:hover #nav a.tel, #nav .pagination li:hover a.tel,
-    .pagination li a:focus,
-    .pagination li #nav a.tel:focus,
-    #nav .pagination li a.tel:focus {
+    .pagination li:hover a,
+    .pagination li a:focus {
       background: #e6e6e6; }
-    .pagination li.unavailable a, .pagination li.unavailable #nav a.tel, #nav .pagination li.unavailable a.tel {
+    .pagination li.unavailable a {
       cursor: default;
       color: #999999; }
-    .pagination li.unavailable:hover a, .pagination li.unavailable:hover #nav a.tel, #nav .pagination li.unavailable:hover a.tel, .pagination li.unavailable a:focus, .pagination li.unavailable #nav a.tel:focus, #nav .pagination li.unavailable a.tel:focus {
+    .pagination li.unavailable:hover a, .pagination li.unavailable a:focus {
       background: transparent; }
-    .pagination li.current a, .pagination li.current #nav a.tel, #nav .pagination li.current a.tel {
+    .pagination li.current a {
       background: #2ba6cb;
       color: white;
       font-weight: bold;
       cursor: default; }
-      .pagination li.current a:hover, .pagination li.current #nav a.tel:hover, #nav .pagination li.current a.tel:hover, .pagination li.current a:focus, .pagination li.current #nav a.tel:focus, #nav .pagination li.current a.tel:focus {
+      .pagination li.current a:hover, .pagination li.current a:focus {
         background: #2ba6cb; }
 
 .pagination-centered {
@@ -3376,10 +3359,10 @@ kbd {
   .side-nav li {
     margin: 0 0 0.4375em 0;
     font-size: 0.875em; }
-    .side-nav li a, .side-nav li #nav a.tel, #nav .side-nav li a.tel {
+    .side-nav li a {
       display: block;
       color: #2ba6cb; }
-    .side-nav li.active a, .side-nav li.active #nav a.tel, #nav .side-nav li.active a.tel {
+    .side-nav li.active a {
       color: #4d4d4d;
       font-weight: bold; }
     .side-nav li.divider {
@@ -3406,16 +3389,12 @@ kbd {
     margin-bottom: 0.625em;
     font-weight: normal;
     font-size: 0.875em; }
-    .sub-nav dt a, .sub-nav dt #nav a.tel, #nav .sub-nav dt a.tel,
-    .sub-nav dd a,
-    .sub-nav dd #nav a.tel,
-    #nav .sub-nav dd a.tel {
+    .sub-nav dt a,
+    .sub-nav dd a {
       color: #999999;
       text-decoration: none; }
-    .sub-nav dt.active a, .sub-nav dt.active #nav a.tel, #nav .sub-nav dt.active a.tel,
-    .sub-nav dd.active a,
-    .sub-nav dd.active #nav a.tel,
-    #nav .sub-nav dd.active a.tel {
+    .sub-nav dt.active a,
+    .sub-nav dd.active a {
       -webkit-border-radius: 1000px;
       border-radius: 1000px;
       font-weight: bold;
@@ -3757,7 +3736,7 @@ table {
     margin: 0; }
     .f-dropdown li:hover, .f-dropdown li:focus {
       background: #eeeeee; }
-    .f-dropdown li a, .f-dropdown li #nav a.tel, #nav .f-dropdown li a.tel {
+    .f-dropdown li a {
       color: #555555; }
   .f-dropdown.content {
     position: absolute;
@@ -3786,7 +3765,7 @@ table {
   .f-dropdown.large {
     max-width: 800px; }
 
-a#top, #nav a#top.tel {
+a#top {
   display: block; }
 
 #booking {
@@ -3796,7 +3775,7 @@ a#top, #nav a#top.tel {
   width: 100%;
   z-index: 999;
   border-bottom: 1px solid #ddd; }
-  #booking a, #booking #nav a.tel, #nav #booking a.tel {
+  #booking a {
     display: block;
     padding: 1rem 0;
     color: #fff !important;
@@ -3812,6 +3791,8 @@ a#top, #nav a#top.tel {
   padding-top: 4rem; }
   #body-content .row {
     margin: 1rem auto; }
+  #body-content p {
+    color: #555; }
 
 #hero-photo {
   text-align: center;
@@ -3822,18 +3803,27 @@ a#top, #nav a#top.tel {
 
 #nav {
   text-align: center; }
-  #nav a, #nav a.tel {
+  #nav a.nav-item {
     display: block;
     text-align: center;
     background: #2ba6cb;
     color: #fff;
     padding: .8rem 0;
     border: 1px solid #2284a1; }
-  #nav a:hover {
+  #nav a.nav-item.current {
+    background: #a3dbec;
+    border: 1px solid #79cae3;
+    color: #2ba6cb;
+    pointer-events: none;
+    cursor: default; }
+  #nav a.nav-item:hover {
     background: #2795b6; }
   #nav a.nav-item + a.nav-item {
     border-top: none; }
   #nav a.tel {
+    display: block;
+    text-align: center;
+    padding: .8rem 0;
     background: #eee;
     color: #2ba6cb;
     border: 1px solid #ccc; }
@@ -3842,7 +3832,7 @@ a#top, #nav a#top.tel {
 
 .footer {
   margin: 1rem auto 3rem; }
-  .footer a.columns, .footer #nav a.columns.tel, #nav .footer a.columns.tel {
+  .footer a.columns {
     text-align: center; }
 
 #contact-form textarea {
