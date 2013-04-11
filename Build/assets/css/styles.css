@@ -4716,5 +4716,8 @@ a#top {
 #contact-form input, #contact-form textarea {
   font-size: 16px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_contact\.scss}line{font-family:\0000311}}
+#contact-form .subject-row {
+  display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_contact\.scss}line{font-family:\0000315}}
 #contact-form #thank-you {
   display: none; }
