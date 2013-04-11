@@ -16,7 +16,11 @@
           return _results;
       }
     };
-    toggleEmailSent = function() {};
+    toggleEmailSent = function() {
+      $('#contact').hide();
+      $('#thank-you').show();
+      return true;
+    };
     xhr = null;
     return $('#contact').on('submit', function() {
       var contact_form;

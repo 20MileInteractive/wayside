@@ -9,7 +9,10 @@ $ ->
 					$("[name=#{field}]").addClass('error')
 
 	toggleEmailSent = ()->
-		# code...
+		$('#contact').hide();
+		$('#thank-you').show();
+		return true
+
 
 	xhr = null
 
