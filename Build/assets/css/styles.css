@@ -4715,3 +4715,6 @@ a#top {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_contact\.scss}line{font-family:\000037}}
 #contact-form input, #contact-form textarea {
   font-size: 16px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_contact\.scss}line{font-family:\0000311}}
+#contact-form #thank-you {
+  display: none; }
