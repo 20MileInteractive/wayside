@@ -1,5 +1,10 @@
 #contact-form{
 	textarea{
 		resize: none;
+		min-height: 100px;
+	}
+	
+	input,textarea{
+		font-size: 16px;
 	}
 }

@@ -12,38 +12,58 @@ a#top{
 	a{
 	display: block;
 	padding: 1rem 0;
-	color: #fff !important;	
-	@include linear-gradient(#cf1702, #ad1302);
+	color: $blue !important;
+	font-weight: bold;
+	text-shadow: 0 1px 0 lighten(#eac635,10%);	
+	@include linear-gradient(#eac635, #d6af16);
+	@include serif;
+	border-bottom: 1px solid #eac635;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
 	}
 	
 }
 
 #body-content{
 	padding-top: 4rem;
+	background: #fff;
 
 	.row{
 		margin: 1rem auto;
 	}
 	
 	p{
-		color: #555;
+		color: #666;
 	}
+}
+
+#body-content.home{
+	padding-top: 1rem;
+	background: #fff;
 }
 
 #hero-photo{
 	text-align: center;
-	background: url("http://placehold.it/400x300/999/777&text=background+photo") center top no-repeat;
-	background-size: cover;
-	background-position:center 50px;
-	min-height: 300px;
+	background: url("../img/chatham-wayside-exterior.jpg") no-repeat;
+	background-position:center bottom;
+	height: 276px;
+	
+	img{
+		margin-top: 60px;
+	}
+
 }
 
 
 #nav{
 	text-align: center;
 	
+	p{
+		color: $blue;
+	}
+	
 	a.nav-item{
 		display: block;
+		@include serif;
 		text-align: center;
 		background: $link;
 		color: #fff;
@@ -70,6 +90,7 @@ a#top{
 	
 	a.tel{
 		display: block;
+		@include serif;
 		text-align: center;
 		padding: .8rem 0;
 		background: #eee;
@@ -84,6 +105,7 @@ a#top{
 }
 
 .footer{
+
 	a.columns{
 		text-align: center;
 	}

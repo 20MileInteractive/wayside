@@ -55,13 +55,19 @@
 		<div class="large-12 columns">
 			<ul data-orbit data-options="timer_speed:3000; bullets:false;">
 			  <li>
-			    <img src="http://placehold.it/600x400&text=photo1" />
+				  <img src="assets/img/chatham-wayside-inn-1.jpg" alt="Hotels Rooms in Chatham Cape Cod at Chatham Wayside Inn" width="640" height="425" />
 			  </li>
 			  <li>
-			    <img src="http://placehold.it/600x400&text=photo2" />
+				  <img src="assets/img/chatham-wayside-inn-2.jpg" alt="Hotels Rooms in Chatham Cape Cod at Chatham Wayside Inn" width="640" height="425" />
 			  </li>
 			  <li>
-			    <img src="http://placehold.it/600x400&text=photo3" />
+				  <img src="assets/img/chatham-wayside-inn-3.jpg" alt="Hotels Rooms in Chatham Cape Cod at Chatham Wayside Inn" width="640" height="425" />
+			  </li>
+			  <li>
+				  <img src="assets/img/chatham-wayside-inn-4.jpg" alt="Hotels Rooms in Chatham Cape Cod at Chatham Wayside Inn" width="640" height="425" />
+			  </li>
+			  <li>
+				  <img src="assets/img/chatham-wayside-inn-5.jpg" alt="Hotels Rooms in Chatham Cape Cod at Chatham Wayside Inn" width="640" height="425" />
 			  </li>
 			</ul>
 		</div>
@@ -70,7 +76,7 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<h3>Rooms &amp; Amenities at Chatham Wayside Inn</h3>
-			<p>The spacious Inn has 56 guest rooms, each with private baths (some with whirlpool spa jets), flat screen TVs, DVD players, air-conditioning and heat, along with helpful touches such as hair dryers and irons. Some rooms have porches or patios with lovely views of the adjacent park or the Chatham Seaside Links Golf Course. There are rooms with fireplaces, and many feature four-poster beds.
+			<p>Our spacious Inn’s guest rooms all feature flat screen TVs and air-conditioning and some rooms have porches or patios with lovely views of the Kate Gould Park or the Chatham Seaside Links Golf Course. There are rooms with fireplaces, and many feature four-poster beds.
 			</p>
 			
 			<p>
@@ -79,7 +85,13 @@
 			
 			<section>
 			<h5>Dining</h5>
-			<p><a href="">The Wild Goose Tavern</a> is our hotel restaurant, available for breakfast lunch and dinner 7 days a week. The Goose features an extensive wine and cocktail menu, and is also available for room service to our guests. 
+			<p><a href="http://www.wildgoosetavern.com/">The Wild Goose Tavern</a> is our hotel restaurant, available for lunch and dinner and offers outdoor dining on Main Street. The Goose features an extensive wine and cocktail menu, and is also available for room service to our guests. 
+			</p>
+			</section>
+
+			<section>
+			<h5>Children</h5>
+			<p>The Chatham Wayside Inn welcomes children of all ages. 
 			</p>
 			</section>
 			
@@ -89,11 +101,6 @@
 			</p>
 			</section>
 
-			<section>
-			<h5>Children</h5>
-			<p>The Chatham Wayside Inn welcomes children of all ages. 
-			</p>
-			</section>
 
 			<section>
 			<h5>Pets</h5>
@@ -103,7 +110,7 @@
 
 			<section>
 			<h5>Special Events</h5>
-			<p>We have the perfect location for any special event, from a wedding party to corporate retreat. Please <a href="#">contact our events coordinator</a> to learn more.  
+			<p>We have the perfect location for any special event, from a wedding party to corporate retreat. Please <a href="contact.html">contact our events coordinator</a> to learn more.  
 			</p>
 			</section>
 			
@@ -152,5 +159,27 @@
     <script src='assets/js/vendor/foundation/foundation.tooltips.js'></script>
     <script src='assets/js/vendor/foundation/foundation.topbar.js'></script>
 	<script src='assets/js/script.js'></script>
+	<script>
+		$('#contact').on('submit', function(){
+			f = $(this);
+			$.ajax({
+				url: 'mailer.php',
+				type: 'POST',
+				data: f.serialize(),
+				error: function( jqXHR, textStatus, errorThrown ) {
+					
+				},
+				success: function (data, textStatus, jqXHR) {
+					if(data =="success") {
+						
+					}
+					if(data =="error") {
+						
+					}
+				}
+			});
+			return false;
+		});
+	</script>
 </body>
 </html>

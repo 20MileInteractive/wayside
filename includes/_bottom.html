@@ -14,5 +14,27 @@
     <!-- @javascript js/vendor/foundation/foundation.tooltips -->
     <!-- @javascript js/vendor/foundation/foundation.topbar -->
 	<!-- @javascript script -->
+	<script>
+		$('#contact').on('submit', function(){
+			f = $(this);
+			$.ajax({
+				url: 'mailer.php',
+				type: 'POST',
+				data: f.serialize(),
+				error: function( jqXHR, textStatus, errorThrown ) {
+					
+				},
+				success: function (data, textStatus, jqXHR) {
+					if(data.status =="success") {
+						
+					}
+					if(data.status =="error") {
+						if(data.msg == "robot"
+					}
+				}
+			});
+			return false;
+		});
+	</script>
 </body>
 </html>

@@ -48,16 +48,16 @@
 </div>
 
 
-<div id="body-content">
+<div id="hero-photo">
+	<img src="assets/img/chatham-wayside-inn-logo.png" alt="Chatham Wayside Inn Logo" width="200" />
+</div>
 
-	<div id="hero-photo">
-			<img id="logo" src="http://placehold.it/200x150&text=logo"/>	
-	</div>
+<div id="body-content" class="home">
 
 	<div class="row">
 		<div class="large-12 columns">
 			<h3>Chatham Wayside Inn, the heart of Chatham.</h3>
-			<p>Set in the heart of the quaint seaside village of Chatham, Cape Cod, the Chatham Wayside Inn offers stylish accommodations, comfortable dining and outstanding service creating the perfect Cape Cod experience year-round. Chatham's strolling Main Street, an exclusive mile of boutique shops, art galleries, and restaurants, is just steps from your door.
+			<p>Set in the heart of the quaint seaside village of Chatham, Cape Cod, the Chatham Wayside Inn offers stylish accommodations, comfortable dining and outstanding service creating the perfect Cape Cod experience year-round. Chatham's strolling Main Street is just steps from your door.
 			</p>
 		</div>
 	</div>
@@ -101,5 +101,27 @@
     <script src='assets/js/vendor/foundation/foundation.tooltips.js'></script>
     <script src='assets/js/vendor/foundation/foundation.topbar.js'></script>
 	<script src='assets/js/script.js'></script>
+	<script>
+		$('#contact').on('submit', function(){
+			f = $(this);
+			$.ajax({
+				url: 'mailer.php',
+				type: 'POST',
+				data: f.serialize(),
+				error: function( jqXHR, textStatus, errorThrown ) {
+					
+				},
+				success: function (data, textStatus, jqXHR) {
+					if(data =="success") {
+						
+					}
+					if(data =="error") {
+						
+					}
+				}
+			});
+			return false;
+		});
+	</script>
 </body>
 </html>
