@@ -7,30 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hotels In Chatham | Chatham Wayside Inn</title>
 
-  
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
-
   <link rel='stylesheet' href='assets/css/normalize.css'>
 <link rel='stylesheet' href='assets/css/vendor/normalize.css'>
   <link rel='stylesheet' href='assets/css/styles.css'>
@@ -101,27 +77,5 @@
     <script src='assets/js/vendor/foundation/foundation.tooltips.js'></script>
     <script src='assets/js/vendor/foundation/foundation.topbar.js'></script>
 	<script src='assets/js/script.js'></script>
-	<script>
-		$('#contact').on('submit', function(){
-			f = $(this);
-			$.ajax({
-				url: 'mailer.php',
-				type: 'POST',
-				data: f.serialize(),
-				error: function( jqXHR, textStatus, errorThrown ) {
-					
-				},
-				success: function (data, textStatus, jqXHR) {
-					if(data =="success") {
-						
-					}
-					if(data =="error") {
-						
-					}
-				}
-			});
-			return false;
-		});
-	</script>
 </body>
 </html>
