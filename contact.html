@@ -4,63 +4,65 @@
 
 <div id="body-content">
 
-<div id="contact-form" class="row">
-	<div class="large-12 columns">
-	<form id="contact" method="post" action="mailer.php">
-  <fieldset>
-    <legend>Contact The Chatham Wayside Inn</legend>
+  <div id="contact-form" class="row">
+    <div class="large-12 columns">
+      <form id="contact" method="post" action="mailer.php">
+        <fieldset>
+        <legend>Contact The Chatham Wayside Inn</legend>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <label>Name</label>
-        <input type="text" name="name">
+        <div class="row">
+          <div class="large-12 columns">
+            <label>Name</label>
+            <input type="text" name="name">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <label>Phone</label>
+            <input type="tel" name="phone">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <label>Email</label>
+            <input type="email" name="email">
+          </div>
+        </div>
+
+        <div class="row subject-row">
+          <div class="large-12 columns">
+            <label>subject</label>
+            <input id="subject" type="text" size="30" name="subject" autocomplete="off">
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="large-12 columns">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <input type="submit" class="button expand" value="Send">
+          </div>
+        </div>
+        </fieldset>
+      </form>
+      <div id="thank-you">
+        show this
       </div>
-    </div>
+  </div>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <label>Phone</label>
-        <input type="tel" name="phone">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-12 columns">
-        <label>Email</label>
-        <input type="email" name="email">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-12 columns">
-        <label>subject</label>
-        <input id="subject" type="text" size="30" name="subject" autocomplete="off">
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="large-12 columns">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <input type="submit" class="button expand" value="Send">
-      </div>
-    </div>
-    
-
-  </fieldset>
-</form>
-	</div>
 </div>
 
 
 <!-- @include _nav.html -->
-	
+
 
 </div>
 <!-- @include _footer.html -->
