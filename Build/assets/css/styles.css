@@ -932,7 +932,7 @@ p.lead {
 
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #7b99d0;
   font-weight: 300;
   margin-top: 0.2em;
   margin-bottom: 0.5em; }
@@ -986,17 +986,17 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-weight: bold;
   font-style: normal;
-  color: #222222;
+  color: #2f4d83;
   text-rendering: optimizeLegibility;
   margin-top: 0.2em;
   margin-bottom: 0.5em;
   line-height: 1.2125em; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
-    color: #6f6f6f;
+    color: #7b99d0;
     line-height: 0; }
 
 h1 {
@@ -1105,17 +1105,17 @@ blockquote {
   blockquote cite {
     display: block;
     font-size: 0.8125em;
-    color: #555555; }
+    color: #567cc2; }
     blockquote cite:before {
       content: "\2014 \0020"; }
     blockquote cite a,
     blockquote cite a:visited {
-      color: #555555; }
+      color: #567cc2; }
 
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f; }
+  color: #7b99d0; }
 
 /* Microformats */
 .vcard {
@@ -3765,6 +3765,9 @@ table {
   .f-dropdown.large {
     max-width: 800px; }
 
+body {
+  background: #2f4d83 url(../img/background.gif) top left repeat; }
+
 a#top {
   display: block; }
 
@@ -3778,57 +3781,125 @@ a#top {
   #booking a {
     display: block;
     padding: 1rem 0;
-    color: #fff !important;
-    background-color: #cf1702;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cf1702), color-stop(100%, #ad1302));
-    background-image: -webkit-linear-gradient(top, #cf1702, #ad1302);
-    background-image: -moz-linear-gradient(top, #cf1702, #ad1302);
-    background-image: -ms-linear-gradient(top, #cf1702, #ad1302);
-    background-image: -o-linear-gradient(top, #cf1702, #ad1302);
-    background-image: linear-gradient(top, #cf1702, #ad1302); }
+    color: #2f4d83 !important;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #efd363;
+    background-color: #eac635;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eac635), color-stop(100%, #d6af16));
+    background-image: -webkit-linear-gradient(top, #eac635, #d6af16);
+    background-image: -moz-linear-gradient(top, #eac635, #d6af16);
+    background-image: -ms-linear-gradient(top, #eac635, #d6af16);
+    background-image: -o-linear-gradient(top, #eac635, #d6af16);
+    background-image: linear-gradient(top, #eac635, #d6af16);
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    border-bottom: 1px solid #eac635;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
 
 #body-content {
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  background: #fff; }
   #body-content .row {
     margin: 1rem auto; }
   #body-content p {
-    color: #555; }
+    color: #666; }
+
+#body-content.home {
+  padding-top: 1rem;
+  background: #fff; }
 
 #hero-photo {
   text-align: center;
-  background: url("http://placehold.it/400x300/999/777&text=background+photo") center top no-repeat;
-  background-size: cover;
-  background-position: center 50px;
-  min-height: 300px; }
+  background: url(../img/chatham-wayside-exterior.jpg) no-repeat;
+  background-position: center bottom;
+  height: 276px;
+  box-shadow: inset 0 0 25px 0 rbga(0, 0, 0, 0.5); }
+  #hero-photo img {
+    margin-top: 60px; }
 
 #nav {
   text-align: center; }
+  #nav p {
+    color: #2f4d83; }
   #nav a.nav-item {
     display: block;
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     text-align: center;
-    background: #2ba6cb;
+    background-color: #2f4d83;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f4d83), color-stop(100%, #2b4678));
+    background-image: -webkit-linear-gradient(top, #2f4d83, #2b4678);
+    background-image: -moz-linear-gradient(top, #2f4d83, #2b4678);
+    background-image: -ms-linear-gradient(top, #2f4d83, #2b4678);
+    background-image: -o-linear-gradient(top, #2f4d83, #2b4678);
+    background-image: linear-gradient(top, #2f4d83, #2b4678);
     color: #fff;
     padding: .8rem 0;
     border: 1px solid #2284a1; }
+  #nav a.nav-item:first-child {
+    border-radius: 7px 7px 0 0; }
+  #nav a.nav-item:last-child {
+    border-radius: 0 0 7px 7px; }
   #nav a.nav-item.current {
-    background: #a3dbec;
+    background-color: #c6d3eb;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c6d3eb), color-stop(100%, #d9e2f1));
+    background-image: -webkit-linear-gradient(top, #c6d3eb, #d9e2f1);
+    background-image: -moz-linear-gradient(top, #c6d3eb, #d9e2f1);
+    background-image: -ms-linear-gradient(top, #c6d3eb, #d9e2f1);
+    background-image: -o-linear-gradient(top, #c6d3eb, #d9e2f1);
+    background-image: linear-gradient(top, #c6d3eb, #d9e2f1);
     border: 1px solid #79cae3;
     color: #2ba6cb;
     pointer-events: none;
     cursor: default; }
   #nav a.nav-item:hover {
-    background: #2795b6; }
+    background-color: #2f4d83;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f4d83), color-stop(100%, #27406c));
+    background-image: -webkit-linear-gradient(top, #2f4d83, #27406c);
+    background-image: -moz-linear-gradient(top, #2f4d83, #27406c);
+    background-image: -ms-linear-gradient(top, #2f4d83, #27406c);
+    background-image: -o-linear-gradient(top, #2f4d83, #27406c);
+    background-image: linear-gradient(top, #2f4d83, #27406c); }
   #nav a.nav-item + a.nav-item {
     border-top: none; }
   #nav a.tel {
     display: block;
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     text-align: center;
     padding: .8rem 0;
-    background: #eee;
+    background-color: #eeeeee;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #dddddd));
+    background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd);
+    background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);
+    background-image: -ms-linear-gradient(top, #eeeeee, #dddddd);
+    background-image: -o-linear-gradient(top, #eeeeee, #dddddd);
+    background-image: linear-gradient(top, #eeeeee, #dddddd);
+    border-radius: 7px;
     color: #2ba6cb;
     border: 1px solid #ccc; }
   #nav a.tel:hover {
-    background: #ddd; }
+    background-color: #eeeeee;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+    background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: linear-gradient(top, #eeeeee, #cccccc); }
+
+a#check-rooms {
+  display: block;
+  padding: 1rem 0;
+  color: #2f4d83 !important;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 1px 0 #efd363;
+  background-color: #eac635;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eac635), color-stop(100%, #d6af16));
+  background-image: -webkit-linear-gradient(top, #eac635, #d6af16);
+  background-image: -moz-linear-gradient(top, #eac635, #d6af16);
+  background-image: -ms-linear-gradient(top, #eac635, #d6af16);
+  background-image: -o-linear-gradient(top, #eac635, #d6af16);
+  background-image: linear-gradient(top, #eac635, #d6af16);
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  border-radius: 7px; }
 
 .footer {
   margin: 1rem auto 3rem; }
@@ -3836,4 +3907,11 @@ a#top {
     text-align: center; }
 
 #contact-form textarea {
-  resize: none; }
+  resize: none;
+  min-height: 100px; }
+#contact-form input, #contact-form textarea {
+  font-size: 16px; }
+#contact-form .subject-row {
+  display: none; }
+#contact-form #thank-you {
+  display: none; }

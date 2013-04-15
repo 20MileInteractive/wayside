@@ -12,48 +12,78 @@ a#top{
 	a{
 	display: block;
 	padding: 1rem 0;
-	color: #fff !important;	
-	@include linear-gradient(#cf1702, #ad1302);
+	color: $blue !important;
+	font-weight: bold;
+	text-shadow: 0 1px 0 lighten(#eac635,10%);	
+	@include linear-gradient(#eac635, #d6af16);
+	@include serif;
+	border-bottom: 1px solid #eac635;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
 	}
 	
 }
 
 #body-content{
 	padding-top: 4rem;
+	background: #fff;
 
 	.row{
 		margin: 1rem auto;
 	}
 	
 	p{
-		color: #555;
+		color: #666;
 	}
+}
+
+#body-content.home{
+	padding-top: 1rem;
+	background: #fff;
 }
 
 #hero-photo{
 	text-align: center;
-	background: url("http://placehold.it/400x300/999/777&text=background+photo") center top no-repeat;
-	background-size: cover;
-	background-position:center 50px;
-	min-height: 300px;
+	background: url("../img/chatham-wayside-exterior.jpg") no-repeat;
+	background-position:center bottom;
+	height: 276px;
+	box-shadow: inset 0 0 25px 0 rbga(0,0,0,.5);
+	
+	img{
+		margin-top: 60px;
+	}
+
 }
 
 
 #nav{
 	text-align: center;
 	
+	p{
+		color: $blue;
+	}
+	
 	a.nav-item{
 		display: block;
+		@include serif;
 		text-align: center;
-		background: $link;
+		@include linear-gradient($blue, darken($blue,3%));
 		color: #fff;
 		padding: .8rem 0;
 		border: 1px solid darken($link,10%);
 
 	}
 	
+	a.nav-item:first-child{
+		border-radius: 7px 7px 0 0;
+	}
+
+	a.nav-item:last-child{
+		border-radius: 0 0 7px 7px;
+	}
+
+	
 	a.nav-item.current{
-		background: lighten($link,30%);
+		@include linear-gradient(lighten($blue,50%), lighten($blue,55%));
 		border:1px solid lighten($link,20%);
 		color: $link;
 		pointer-events: none;
@@ -61,7 +91,7 @@ a#top{
 	}
 	
 	a.nav-item:hover{
-		background: darken($link, 5%);
+		@include linear-gradient($blue, darken($blue,6%));
 	}
 	
 	a.nav-item+a.nav-item{
@@ -70,20 +100,35 @@ a#top{
 	
 	a.tel{
 		display: block;
+		@include serif;
 		text-align: center;
 		padding: .8rem 0;
-		background: #eee;
+		@include linear-gradient(#eee,#ddd);
+		border-radius: 7px;
 		color: $link;
 		border:1px solid #ccc;
 	}
 	
 	a.tel:hover{
-		background: #ddd;
+		@include linear-gradient(#eee,#ccc);
 	}
 	
 }
 
+a#check-rooms{
+	display: block;
+	padding: 1rem 0;
+	color: $blue !important;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 1px 0 lighten(#eac635,10%);	
+	@include linear-gradient(#eac635, #d6af16);
+	@include serif;
+	border-radius: 7px;
+}
+
 .footer{
+
 	a.columns{
 		text-align: center;
 	}
