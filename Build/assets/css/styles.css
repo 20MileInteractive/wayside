@@ -4655,8 +4655,9 @@ a#top {
   text-align: center;
   background: url(../img/chatham-wayside-exterior.jpg) no-repeat;
   background-position: center bottom;
-  height: 276px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_nav\.scss}line{font-family:\0000350}}
+  height: 276px;
+  box-shadow: inset 0 0 25px 0 rbga(0, 0, 0, 0.5); }
+
   #hero-photo img {
     margin-top: 60px; }
 
@@ -4671,21 +4672,41 @@ a#top {
     display: block;
     font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     text-align: center;
-    background: #2ba6cb;
+    background-color: #2f4d83;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f4d83), color-stop(100%, #2b4678));
+    background-image: -webkit-linear-gradient(top, #2f4d83, #2b4678);
+    background-image: -moz-linear-gradient(top, #2f4d83, #2b4678);
+    background-image: -ms-linear-gradient(top, #2f4d83, #2b4678);
+    background-image: -o-linear-gradient(top, #2f4d83, #2b4678);
+    background-image: linear-gradient(top, #2f4d83, #2b4678);
     color: #fff;
     padding: .8rem 0;
     border: 1px solid #2284a1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_nav\.scss}line{font-family:\0000375}}
+  #nav a.nav-item:first-child {
+    border-radius: 7px 7px 0 0; }
+  #nav a.nav-item:last-child {
+    border-radius: 0 0 7px 7px; }
   #nav a.nav-item.current {
-    background: #a3dbec;
+    background-color: #c6d3eb;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c6d3eb), color-stop(100%, #d9e2f1));
+    background-image: -webkit-linear-gradient(top, #c6d3eb, #d9e2f1);
+    background-image: -moz-linear-gradient(top, #c6d3eb, #d9e2f1);
+    background-image: -ms-linear-gradient(top, #c6d3eb, #d9e2f1);
+    background-image: -o-linear-gradient(top, #c6d3eb, #d9e2f1);
+    background-image: linear-gradient(top, #c6d3eb, #d9e2f1);
     border: 1px solid #79cae3;
     color: #2ba6cb;
     pointer-events: none;
     cursor: default; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_nav\.scss}line{font-family:\0000383}}
   #nav a.nav-item:hover {
-    background: #2795b6; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_nav\.scss}line{font-family:\0000387}}
+    background-color: #2f4d83;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f4d83), color-stop(100%, #27406c));
+    background-image: -webkit-linear-gradient(top, #2f4d83, #27406c);
+    background-image: -moz-linear-gradient(top, #2f4d83, #27406c);
+    background-image: -ms-linear-gradient(top, #2f4d83, #27406c);
+    background-image: -o-linear-gradient(top, #2f4d83, #27406c);
+    background-image: linear-gradient(top, #2f4d83, #27406c); }
   #nav a.nav-item + a.nav-item {
     border-top: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_nav\.scss}line{font-family:\0000391}}
@@ -4694,12 +4715,25 @@ a#top {
     font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
     text-align: center;
     padding: .8rem 0;
-    background: #eee;
+    background-color: #eeeeee;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #dddddd));
+    background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd);
+    background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);
+    background-image: -ms-linear-gradient(top, #eeeeee, #dddddd);
+    background-image: -o-linear-gradient(top, #eeeeee, #dddddd);
+    background-image: linear-gradient(top, #eeeeee, #dddddd);
+    border-radius: 7px;
     color: #2ba6cb;
     border: 1px solid #ccc; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_nav\.scss}line{font-family:\00003101}}
   #nav a.tel:hover {
-    background: #ddd; }
+    background-color: #eeeeee;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+    background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
+    background-image: linear-gradient(top, #eeeeee, #cccccc); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/rodrigopassos\/Documents\/Repositories\/wayside\/assets\/css\/_nav\.scss}line{font-family:\00003107}}
 .footer {
