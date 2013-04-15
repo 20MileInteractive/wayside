@@ -115,6 +115,18 @@ a#top{
 	
 }
 
+a#check-rooms{
+	display: block;
+	padding: 1rem 0;
+	color: $blue !important;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 1px 0 lighten(#eac635,10%);	
+	@include linear-gradient(#eac635, #d6af16);
+	@include serif;
+	border-radius: 7px;
+}
+
 .footer{
 
 	a.columns{

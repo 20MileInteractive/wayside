@@ -42,8 +42,7 @@
 		return str_replace($bad,"",$string);
     }
 
-	// $email_to = "chris@chrisobriendesign.com";
-	$email_to = "rpassos@20miletech.com";
+  $email_to = "chris@chrisobriendesign.com";
     $email_subject = "Website Contact Form";
 
 	$name = $_POST['name']; 
