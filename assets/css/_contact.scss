@@ -11,6 +11,17 @@
 	.subject-row {
 		display: none;
 	}
+	
+	input.button{
+		@include linear-gradient($blue, darken($blue,3%));
+		color: #fff;
+		border-radius:7px;
+
+	}
+	
+	input.button:hover{
+		@include linear-gradient($blue, darken($blue,6%));
+	}
 
 	#thank-you {
 		display: none;
