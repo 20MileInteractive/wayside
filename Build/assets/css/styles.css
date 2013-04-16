@@ -3913,5 +3913,23 @@ a#check-rooms {
   font-size: 16px; }
 #contact-form .subject-row {
   display: none; }
+#contact-form input.button {
+  background-color: #2f4d83;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f4d83), color-stop(100%, #2b4678));
+  background-image: -webkit-linear-gradient(top, #2f4d83, #2b4678);
+  background-image: -moz-linear-gradient(top, #2f4d83, #2b4678);
+  background-image: -ms-linear-gradient(top, #2f4d83, #2b4678);
+  background-image: -o-linear-gradient(top, #2f4d83, #2b4678);
+  background-image: linear-gradient(top, #2f4d83, #2b4678);
+  color: #fff;
+  border-radius: 7px; }
+#contact-form input.button:hover {
+  background-color: #2f4d83;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f4d83), color-stop(100%, #27406c));
+  background-image: -webkit-linear-gradient(top, #2f4d83, #27406c);
+  background-image: -moz-linear-gradient(top, #2f4d83, #27406c);
+  background-image: -ms-linear-gradient(top, #2f4d83, #27406c);
+  background-image: -o-linear-gradient(top, #2f4d83, #27406c);
+  background-image: linear-gradient(top, #2f4d83, #27406c); }
 #contact-form #thank-you {
   display: none; }
