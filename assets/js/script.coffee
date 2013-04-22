@@ -20,7 +20,7 @@ $ ->
 		contact_form = $(@)
 		$('input, textarea').removeClass('error')
 		xhr.abort() if xhr
-		xhr = $.ajax '/mailer.json',
+		xhr = $.ajax '/mailer.php',
 			type: 'POST'
 			dataType: 'json'
 			data: contact_form.serialize()

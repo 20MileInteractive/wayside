@@ -29,7 +29,7 @@
       if (xhr) {
         xhr.abort();
       }
-      xhr = $.ajax('/mailer.json', {
+      xhr = $.ajax('/mailer.php', {
         type: 'POST',
         dataType: 'json',
         data: contact_form.serialize(),
