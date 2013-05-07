@@ -1,10 +1,11 @@
 (function() {
-
   $(function() {
     var handleErrors, toggleEmailSent, xhr;
+
     $(document).foundation();
     handleErrors = function(data) {
       var field, _i, _len, _ref, _results;
+
       switch (data.error_type) {
         case 'empty_field':
           _ref = data.fields;
@@ -24,12 +25,13 @@
     xhr = null;
     return $('#contact').on('submit', function() {
       var contact_form;
+
       contact_form = $(this);
       $('input, textarea').removeClass('error');
       if (xhr) {
         xhr.abort();
       }
-      xhr = $.ajax('/mailer.php', {
+      xhr = $.ajax(contact_form.action, {
         type: 'POST',
         dataType: 'json',
         data: contact_form.serialize(),
