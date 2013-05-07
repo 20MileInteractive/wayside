@@ -20,7 +20,7 @@ $ ->
 		contact_form = $(@)
 		$('input, textarea').removeClass('error')
 		xhr.abort() if xhr
-		xhr = $.ajax contact_form.action,
+		xhr = $.ajax @.action,
 			type: 'POST'
 			dataType: 'json'
 			data: contact_form.serialize()

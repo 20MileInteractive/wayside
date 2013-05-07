@@ -31,7 +31,7 @@
       if (xhr) {
         xhr.abort();
       }
-      xhr = $.ajax(contact_form.action, {
+      xhr = $.ajax(this.action, {
         type: 'POST',
         dataType: 'json',
         data: contact_form.serialize(),
